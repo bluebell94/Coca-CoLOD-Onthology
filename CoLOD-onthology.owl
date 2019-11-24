@@ -1,0 +1,697 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY CoLOD "https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#" >
+]>
+
+
+<rdf:RDF xmlns="https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#"
+     xml:base="https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:CoLOD="https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#">
+    <owl:Ontology rdf:about="https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#attractedBy -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;attractedBy">
+        <rdfs:range rdf:resource="&CoLOD;Slogan"/>
+        <rdfs:range rdf:resource="&CoLOD;Song"/>
+        <rdfs:domain rdf:resource="&CoLOD;Youngers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;belongsTo">
+        <rdfs:range rdf:resource="&CoLOD;Person"/>
+        <rdfs:domain rdf:resource="&CoLOD;Personal_experience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#combineMeaningOf -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;combineMeaningOf">
+        <rdfs:range rdf:resource="&CoLOD;Signified"/>
+        <rdfs:range rdf:resource="&CoLOD;Signifier"/>
+        <rdfs:domain rdf:resource="&CoLOD;Youngers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#consumedBy -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;consumedBy">
+        <rdfs:domain rdf:resource="&CoLOD;Coca-Cola"/>
+        <rdfs:range rdf:resource="&CoLOD;Consumer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#createsIdentityBy -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;createsIdentityBy">
+        <rdfs:domain rdf:resource="&CoLOD;Coca-Cola"/>
+        <rdfs:range rdf:resource="&CoLOD;Marketing/Communication_Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#focusOn -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;focusOn">
+        <rdfs:range rdf:resource="&CoLOD;Inscriptions"/>
+        <rdfs:domain rdf:resource="&CoLOD;Mature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#involve -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;involve">
+        <rdfs:range rdf:resource="&CoLOD;Metaphors"/>
+        <rdfs:range rdf:resource="&CoLOD;Repetitions"/>
+        <rdfs:domain rdf:resource="&CoLOD;Slogan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#isACombinationOf -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;isACombinationOf">
+        <rdfs:domain rdf:resource="&CoLOD;Coca-Cola"/>
+        <rdfs:range rdf:resource="&CoLOD;Signified"/>
+        <rdfs:range rdf:resource="&CoLOD;Signifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#isBuiltBy -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;isBuiltBy">
+        <rdfs:domain rdf:resource="&CoLOD;Added_value"/>
+        <rdfs:range rdf:resource="&CoLOD;Figures_of_speech"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#isConstructedBy -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;isConstructedBy">
+        <rdfs:range rdf:resource="&CoLOD;Metaphors"/>
+        <rdfs:domain rdf:resource="&CoLOD;Signified"/>
+        <rdfs:range rdf:resource="&CoLOD;Storytelling/narration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#isCreatedFor -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;isCreatedFor">
+        <rdfs:range rdf:resource="&CoLOD;Consumer"/>
+        <rdfs:domain rdf:resource="&CoLOD;Marketing/Communication_Strategy"/>
+        <rdfs:range rdf:resource="&CoLOD;Non-consumer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#isMadeBy -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;isMadeBy">
+        <rdfs:domain rdf:resource="&CoLOD;Marketing/Communication_Strategy"/>
+        <rdfs:range rdf:resource="&CoLOD;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#isSimilarTo -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;isSimilarTo"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#loyalTo -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;loyalTo">
+        <rdfs:range rdf:resource="&CoLOD;Coca-Cola"/>
+        <rdfs:domain rdf:resource="&CoLOD;Consumer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#makesUnique -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;makesUnique">
+        <rdfs:domain rdf:resource="&CoLOD;Added_value"/>
+        <rdfs:range rdf:resource="&CoLOD;Coca-Cola"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#notConsumedBy -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;notConsumedBy">
+        <rdfs:domain rdf:resource="&CoLOD;Coca-Cola"/>
+        <rdfs:range rdf:resource="&CoLOD;Non-consumer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#perceiveMore -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;perceiveMore">
+        <rdfs:range rdf:resource="&CoLOD;Characteristic_features"/>
+        <rdfs:range rdf:resource="&CoLOD;Literal_perception/meaning"/>
+        <rdfs:domain rdf:resource="&CoLOD;Mature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#perceivedFrom -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;perceivedFrom">
+        <rdfs:domain rdf:resource="&CoLOD;Emotional_characteristics"/>
+        <rdfs:range rdf:resource="&CoLOD;Facial_expressions"/>
+        <rdfs:range rdf:resource="&CoLOD;Gestures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#provoke -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;provoke">
+        <rdfs:range rdf:resource="&CoLOD;Associations"/>
+        <rdfs:domain rdf:resource="&CoLOD;Repetitions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#putsEmphasisOn -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;putsEmphasisOn">
+        <rdfs:domain rdf:resource="&CoLOD;Marketing/Communication_Strategy"/>
+        <rdfs:range rdf:resource="&CoLOD;Signified"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#reliesOn -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;reliesOn">
+        <rdfs:range rdf:resource="&CoLOD;Added_value"/>
+        <rdfs:domain rdf:resource="&CoLOD;Marketing/Communication_Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#seekFor -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;seekFor">
+        <rdfs:range rdf:resource="&CoLOD;Emotional_characteristics"/>
+        <rdfs:range rdf:resource="&CoLOD;Personal_experience"/>
+        <rdfs:domain rdf:resource="&CoLOD;Youngers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#trigger -->
+
+    <owl:ObjectProperty rdf:about="&CoLOD;trigger">
+        <rdfs:range rdf:resource="&CoLOD;Associations"/>
+        <rdfs:domain rdf:resource="&CoLOD;Slogan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#age -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;age"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#caffeine -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;caffeine"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#calories -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;calories">
+        <rdfs:domain rdf:resource="&CoLOD;Beverage"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#createdBy -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;createdBy"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#createdInYear -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;createdInYear"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#gender -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;gender"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#occupation -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;occupation"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#sugars -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;sugars"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#taste -->
+
+    <owl:DatatypeProperty rdf:about="&CoLOD;taste"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Added_value -->
+
+    <owl:Class rdf:about="&CoLOD;Added_value">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Signified"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Associations -->
+
+    <owl:Class rdf:about="&CoLOD;Associations">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Added_value"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Beverage -->
+
+    <owl:Class rdf:about="&CoLOD;Beverage"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Carbonated -->
+
+    <owl:Class rdf:about="&CoLOD;Carbonated">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Characteristic_features -->
+
+    <owl:Class rdf:about="&CoLOD;Characteristic_features">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Signifier"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Coca-Cola -->
+
+    <owl:Class rdf:about="&CoLOD;Coca-Cola">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Carbonated"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Concept -->
+
+    <owl:Class rdf:about="&CoLOD;Concept"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Conceptual_Metaphors -->
+
+    <owl:Class rdf:about="&CoLOD;Conceptual_Metaphors">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Metaphors"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Consumer -->
+
+    <owl:Class rdf:about="&CoLOD;Consumer">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Emotional_characteristics -->
+
+    <owl:Class rdf:about="&CoLOD;Emotional_characteristics">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Added_value"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Facial_expressions -->
+
+    <owl:Class rdf:about="&CoLOD;Facial_expressions">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Non-verbal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Figures_of_speech -->
+
+    <owl:Class rdf:about="&CoLOD;Figures_of_speech">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Gestures -->
+
+    <owl:Class rdf:about="&CoLOD;Gestures">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Non-verbal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Inscriptions -->
+
+    <owl:Class rdf:about="&CoLOD;Inscriptions">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Verbal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Literal_perception/meaning -->
+
+    <owl:Class rdf:about="&CoLOD;Literal_perception/meaning">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Signifier"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Marketing/Communication_Strategy -->
+
+    <owl:Class rdf:about="&CoLOD;Marketing/Communication_Strategy">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Mature -->
+
+    <owl:Class rdf:about="&CoLOD;Mature">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Metaphors -->
+
+    <owl:Class rdf:about="&CoLOD;Metaphors">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Figures_of_speech"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Non-carbonated -->
+
+    <owl:Class rdf:about="&CoLOD;Non-carbonated">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Non-consumer -->
+
+    <owl:Class rdf:about="&CoLOD;Non-consumer">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Non-verbal -->
+
+    <owl:Class rdf:about="&CoLOD;Non-verbal">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Marketing/Communication_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Onthological_metaphors -->
+
+    <owl:Class rdf:about="&CoLOD;Onthological_metaphors">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Metaphors"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Orientational_Metaphors -->
+
+    <owl:Class rdf:about="&CoLOD;Orientational_Metaphors">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Metaphors"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Person -->
+
+    <owl:Class rdf:about="&CoLOD;Person"/>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Personal_experience -->
+
+    <owl:Class rdf:about="&CoLOD;Personal_experience">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Added_value"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Personification_Metaphors -->
+
+    <owl:Class rdf:about="&CoLOD;Personification_Metaphors">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Metaphors"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Repetitions -->
+
+    <owl:Class rdf:about="&CoLOD;Repetitions">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Figures_of_speech"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Saussaure_structuralism -->
+
+    <owl:Class rdf:about="&CoLOD;Saussaure_structuralism">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Signified -->
+
+    <owl:Class rdf:about="&CoLOD;Signified">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Saussaure_structuralism"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Signifier -->
+
+    <owl:Class rdf:about="&CoLOD;Signifier">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Saussaure_structuralism"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Slogan -->
+
+    <owl:Class rdf:about="&CoLOD;Slogan">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Verbal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Song -->
+
+    <owl:Class rdf:about="&CoLOD;Song">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Verbal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Storytelling/narration -->
+
+    <owl:Class rdf:about="&CoLOD;Storytelling/narration">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Figures_of_speech"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Verbal -->
+
+    <owl:Class rdf:about="&CoLOD;Verbal">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Marketing/Communication_Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Youngers -->
+
+    <owl:Class rdf:about="&CoLOD;Youngers">
+        <rdfs:subClassOf rdf:resource="&CoLOD;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Coca-Cola_Cherry -->
+
+    <owl:NamedIndividual rdf:about="&CoLOD;Coca-Cola_Cherry">
+        <rdf:type rdf:resource="&CoLOD;Coca-Cola"/>
+        <sugars rdf:datatype="&xsd;integer">11,2g</sugars>
+        <caffeine rdf:datatype="&xsd;integer">34mg</caffeine>
+        <calories rdf:datatype="&xsd;integer">45/100ml</calories>
+        <taste rdf:datatype="&xsd;string">sweet cherry</taste>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Coca-Cola_Light -->
+
+    <owl:NamedIndividual rdf:about="&CoLOD;Coca-Cola_Light">
+        <rdf:type rdf:resource="&CoLOD;Coca-Cola"/>
+        <sugars rdf:datatype="&xsd;integer">0</sugars>
+        <calories rdf:datatype="&xsd;integer">0,3/100ml</calories>
+        <taste rdf:datatype="&xsd;string">slightly sweet</taste>
+        <isSimilarTo rdf:resource="&CoLOD;Coca-Cola_Zero"/>
+        <isSimilarTo rdf:resource="&CoLOD;Coca-Cola_with_Stevia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Coca-Cola_Original_taste -->
+
+    <owl:NamedIndividual rdf:about="&CoLOD;Coca-Cola_Original_taste">
+        <rdf:type rdf:resource="&CoLOD;Coca-Cola"/>
+        <sugars rdf:datatype="&xsd;float">10,4g/100ml</sugars>
+        <createdInYear rdf:datatype="&xsd;integer">1886</createdInYear>
+        <caffeine rdf:datatype="&xsd;integer">34mg</caffeine>
+        <calories rdf:datatype="&xsd;integer">42/100ml</calories>
+        <createdBy rdf:datatype="&xsd;Name">John Pemberton</createdBy>
+        <taste rdf:datatype="&xsd;string">sweet</taste>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Coca-Cola_Zero -->
+
+    <owl:NamedIndividual rdf:about="&CoLOD;Coca-Cola_Zero">
+        <rdf:type rdf:resource="&CoLOD;Coca-Cola"/>
+        <calories rdf:datatype="&xsd;float">0,2/100ml</calories>
+        <sugars rdf:datatype="&xsd;float">0g/100ml</sugars>
+        <caffeine rdf:datatype="&xsd;integer">34mg</caffeine>
+        <taste rdf:datatype="&xsd;string">slightly sweet</taste>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Coca-Cola_with_Stevia -->
+
+    <owl:NamedIndividual rdf:about="&CoLOD;Coca-Cola_with_Stevia">
+        <rdf:type rdf:resource="&CoLOD;Coca-Cola"/>
+        <calories rdf:datatype="&xsd;integer">0,2/100ml</calories>
+        <taste rdf:datatype="&xsd;string">slightly sweet</taste>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Diet_Coke -->
+
+    <owl:NamedIndividual rdf:about="&CoLOD;Diet_Coke">
+        <rdf:type rdf:resource="&CoLOD;Coca-Cola"/>
+        <sugars rdf:datatype="&xsd;integer">0</sugars>
+        <caffeine rdf:datatype="&xsd;integer">42mg</caffeine>
+        <taste rdf:datatype="&xsd;string">a bit sweet</taste>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bluebell94.github.io/Coca-CoLOD-Onthology/CoLOD.owl#Taste_the_Feeling -->
+
+    <owl:NamedIndividual rdf:about="&CoLOD;Taste_the_Feeling">
+        <rdf:type rdf:resource="&CoLOD;Slogan"/>
+        <rdf:type rdf:resource="&CoLOD;Song"/>
+        <createdBy rdf:datatype="&xsd;Name">Avicii</createdBy>
+        <createdBy rdf:datatype="&xsd;Name">Conrad Sewell</createdBy>
+        <isCreatedFor rdf:resource="&CoLOD;Coca-Cola_Original_taste"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
